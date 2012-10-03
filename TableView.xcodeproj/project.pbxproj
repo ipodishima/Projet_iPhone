@@ -13,6 +13,10 @@
 		9B335C23160C9549004885DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B335C21160C9549004885DC /* InfoPlist.strings */; };
 		9B335C25160C9549004885DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C24160C9549004885DC /* main.m */; };
 		9B335C29160C9549004885DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C28160C9549004885DC /* AppDelegate.m */; };
+		9B335C31160C956E004885DC /* DataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C30160C956E004885DC /* DataListViewController.m */; };
+		9B335C35160C9E03004885DC /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C33160C9E03004885DC /* DetailListViewController.m */; };
+		9B335C36160C9E03004885DC /* DetailListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B335C34160C9E03004885DC /* DetailListViewController.xib */; };
+		9B335C39160CA04A004885DC /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C38160CA04A004885DC /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		9B335C26160C9549004885DC /* TableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableView-Prefix.pch"; sourceTree = "<group>"; };
 		9B335C27160C9549004885DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B335C28160C9549004885DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B335C2F160C956E004885DC /* DataListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataListViewController.h; sourceTree = "<group>"; };
+		9B335C30160C956E004885DC /* DataListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataListViewController.m; sourceTree = "<group>"; };
+		9B335C32160C9E03004885DC /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
+		9B335C33160C9E03004885DC /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
+		9B335C34160C9E03004885DC /* DetailListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailListViewController.xib; sourceTree = "<group>"; };
+		9B335C37160CA04A004885DC /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		9B335C38160CA04A004885DC /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,10 @@
 		9B335C09160C9549004885DC = {
 			isa = PBXGroup;
 			children = (
+				9B335C2F160C956E004885DC /* DataListViewController.h */,
+				9B335C30160C956E004885DC /* DataListViewController.m */,
+				9B335C37160CA04A004885DC /* CustomCell.h */,
+				9B335C38160CA04A004885DC /* CustomCell.m */,
 				9B335C1E160C9549004885DC /* TableView */,
 				9B335C17160C9549004885DC /* Frameworks */,
 				9B335C15160C9549004885DC /* Products */,
@@ -74,6 +89,9 @@
 			children = (
 				9B335C27160C9549004885DC /* AppDelegate.h */,
 				9B335C28160C9549004885DC /* AppDelegate.m */,
+				9B335C32160C9E03004885DC /* DetailListViewController.h */,
+				9B335C33160C9E03004885DC /* DetailListViewController.m */,
+				9B335C34160C9E03004885DC /* DetailListViewController.xib */,
 				9B335C1F160C9549004885DC /* Supporting Files */,
 			);
 			path = TableView;
@@ -142,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B335C23160C9549004885DC /* InfoPlist.strings in Resources */,
+				9B335C36160C9E03004885DC /* DetailListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +173,9 @@
 			files = (
 				9B335C25160C9549004885DC /* main.m in Sources */,
 				9B335C29160C9549004885DC /* AppDelegate.m in Sources */,
+				9B335C31160C956E004885DC /* DataListViewController.m in Sources */,
+				9B335C35160C9E03004885DC /* DetailListViewController.m in Sources */,
+				9B335C39160CA04A004885DC /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

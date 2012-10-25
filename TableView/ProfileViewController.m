@@ -1,19 +1,18 @@
 //
-//  DetailListViewController.m
+//  ProfileViewController.m
 //  TableView
 //
-//  Created by Élèves on 21/09/12.
+//  Created by Élèves on 25/10/12.
 //  Copyright (c) 2012 EvaRousseau. All rights reserved.
 //
 
-#import "DetailListViewController.h"
+#import "ProfileViewController.h"
 
-@interface DetailListViewController ()
+@interface ProfileViewController ()
 
 @end
 
-@implementation DetailListViewController
-@synthesize texteAAfficher = _texteAAfficher;
+@implementation ProfileViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,11 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
-    //[self.view addSubview:_label];
-    //_label.text = _texteAAfficher;
-
+     self.title = @"Mon Profil";
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
@@ -40,7 +36,6 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

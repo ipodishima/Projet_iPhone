@@ -52,6 +52,11 @@
 		9B335C31160C956E004885DC /* DataListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C30160C956E004885DC /* DataListViewController.m */; };
 		9B335C39160CA04A004885DC /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B335C38160CA04A004885DC /* CustomCell.m */; };
 		9B5E9D4E1639244400DDDBDD /* 43-film-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E9D4D1639244400DDDBDD /* 43-film-roll.png */; };
+		9B5E9D5E1639397700DDDBDD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E9D5C1639397600DDDBDD /* ProfileViewController.m */; };
+		9B5E9D5F1639397700DDDBDD /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E9D5D1639397600DDDBDD /* ProfileViewController.xib */; };
+		9B5E9D6616393C5700DDDBDD /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E9D6416393C5700DDDBDD /* MovieViewController.m */; };
+		9B5E9D6716393C5700DDDBDD /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E9D6516393C5700DDDBDD /* MovieViewController.xib */; };
+		9B5E9D6C16393FD300DDDBDD /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E9D6B16393FD300DDDBDD /* 111-user.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -130,6 +135,13 @@
 		9B5E9D4B163923E700DDDBDD /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Contact.h; path = MSToolTips/MSToolTips/Contact.h; sourceTree = SOURCE_ROOT; };
 		9B5E9D4C163923E700DDDBDD /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Contact.m; path = MSToolTips/MSToolTips/Contact.m; sourceTree = SOURCE_ROOT; };
 		9B5E9D4D1639244400DDDBDD /* 43-film-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "43-film-roll.png"; path = "TableView/43-film-roll.png"; sourceTree = SOURCE_ROOT; };
+		9B5E9D5B1639397600DDDBDD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		9B5E9D5C1639397600DDDBDD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		9B5E9D5D1639397600DDDBDD /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9B5E9D6316393C5700DDDBDD /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		9B5E9D6416393C5700DDDBDD /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		9B5E9D6516393C5700DDDBDD /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		9B5E9D6B16393FD300DDDBDD /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,14 +271,14 @@
 		9B2B65F416245DD600149ADD /* Init */ = {
 			isa = PBXGroup;
 			children = (
+				9B5E9D6A16393DF300DDDBDD /* MovieView */,
+				9B5E9D6916393DD500DDDBDD /* ProfileVIew */,
+				9B5E9D6816393DC000DDDBDD /* DetailList */,
 				9B2B66001624613B00149ADD /* 123-id-card.png */,
 				9B335C2F160C956E004885DC /* DataListViewController.h */,
 				9B335C30160C956E004885DC /* DataListViewController.m */,
 				9B335C37160CA04A004885DC /* CustomCell.h */,
 				9B335C38160CA04A004885DC /* CustomCell.m */,
-				9B2B65A116245C8600149ADD /* DetailListViewController.h */,
-				9B2B65A216245C8600149ADD /* DetailListViewController.m */,
-				9B2B65A316245C8600149ADD /* DetailListViewController.xib */,
 			);
 			name = Init;
 			sourceTree = "<group>";
@@ -378,6 +390,37 @@
 			name = "Sample Load File";
 			sourceTree = "<group>";
 		};
+		9B5E9D6816393DC000DDDBDD /* DetailList */ = {
+			isa = PBXGroup;
+			children = (
+				9B2B65A116245C8600149ADD /* DetailListViewController.h */,
+				9B2B65A216245C8600149ADD /* DetailListViewController.m */,
+				9B2B65A316245C8600149ADD /* DetailListViewController.xib */,
+			);
+			name = DetailList;
+			sourceTree = "<group>";
+		};
+		9B5E9D6916393DD500DDDBDD /* ProfileVIew */ = {
+			isa = PBXGroup;
+			children = (
+				9B5E9D6B16393FD300DDDBDD /* 111-user.png */,
+				9B5E9D5B1639397600DDDBDD /* ProfileViewController.h */,
+				9B5E9D5C1639397600DDDBDD /* ProfileViewController.m */,
+				9B5E9D5D1639397600DDDBDD /* ProfileViewController.xib */,
+			);
+			name = ProfileVIew;
+			sourceTree = "<group>";
+		};
+		9B5E9D6A16393DF300DDDBDD /* MovieView */ = {
+			isa = PBXGroup;
+			children = (
+				9B5E9D6316393C5700DDDBDD /* MovieViewController.h */,
+				9B5E9D6416393C5700DDDBDD /* MovieViewController.m */,
+				9B5E9D6516393C5700DDDBDD /* MovieViewController.xib */,
+			);
+			name = MovieView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +490,9 @@
 				9B2B65FF162460B600149ADD /* 80-shopping-cart.png in Resources */,
 				9B2B66011624613B00149ADD /* 123-id-card.png in Resources */,
 				9B5E9D4E1639244400DDDBDD /* 43-film-roll.png in Resources */,
+				9B5E9D5F1639397700DDDBDD /* ProfileViewController.xib in Resources */,
+				9B5E9D6716393C5700DDDBDD /* MovieViewController.xib in Resources */,
+				9B5E9D6C16393FD300DDDBDD /* 111-user.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +525,8 @@
 				9B2B65E816245CAE00149ADD /* YouTubeViewController.m in Sources */,
 				9B2B65F916245FB800149ADD /* LessonViewController.m in Sources */,
 				9B2B6605162461D700149ADD /* OrderViewController.m in Sources */,
+				9B5E9D5E1639397700DDDBDD /* ProfileViewController.m in Sources */,
+				9B5E9D6616393C5700DDDBDD /* MovieViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

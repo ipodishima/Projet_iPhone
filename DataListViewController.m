@@ -9,6 +9,8 @@
 #import "DataListViewController.h"
 #import "DetailListViewController.h"
 #import "CustomCell.h"
+#import "ProfileViewController.h"
+#import "MovieViewController.h"
 
 @interface DataListViewController ()
 
@@ -75,6 +77,19 @@
     }
     cell.myLabel.text = [_dataToShow objectAtIndex:[indexPath row]];
     
+    switch (indexPath.row) {
+        case 0:
+            cell.imageView.image = [UIImage imageNamed:@"111-user.png"];
+            break;
+            
+        case 1:
+            cell.imageView.image = [UIImage imageNamed:@"43-film-roll.png"];
+            break;
+            
+        default:
+            break;
+    }
+    
     return cell;
 }
 
@@ -128,11 +143,34 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    DetailListViewController *detailListViewController = [[DetailListViewController alloc]
-                                                          initWithNibName:@"DetailListViewController" bundle:nil];
-    detailListViewController.texteAAfficher = [_dataToShow objectAtIndex:[indexPath row]]; // Possibilité d’afficher un titre dans la barre de navigation
-    detailListViewController.title = [_dataToShow objectAtIndex:[indexPath row]];
-    [self.navigationController pushViewController:detailListViewController animated:YES];
+    switch (indexPath.row) {
+        case 0:
+        {
+            ProfileViewController *profileViewController = [[ProfileViewController alloc]
+                                                                  initWithNibName:@"ProfileViewController" bundle:nil];
+            [self.navigationController pushViewController:profileViewController animated:YES];
+            break;
+        }
+            
+        case 1:
+        {
+            MovieViewController *movieViewController = [[MovieViewController alloc]
+                                                        initWithNibName:@"MovieViewController" bundle:nil];
+            [self.navigationController pushViewController:movieViewController animated:YES];
+            break;
+        }
+            
+        default:
+        {
+            DetailListViewController *detailListViewController = [[DetailListViewController alloc]
+                                                                  initWithNibName:@"DetailListViewController" bundle:nil];
+            detailListViewController.texteAAfficher = [_dataToShow objectAtIndex:[indexPath row]]; // Possibilité d’afficher un titre dans la barre de navigation
+            detailListViewController.title = [_dataToShow objectAtIndex:[indexPath row]];
+            [self.navigationController pushViewController:detailListViewController animated:YES];
+            break;
+        }
+            
+    }
 
 }
 

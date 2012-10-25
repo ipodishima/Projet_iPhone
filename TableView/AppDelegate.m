@@ -7,18 +7,61 @@
 //
 
 #import "AppDelegate.h"
+#import "YouTubeViewController.h"
+#import "LocalFileViewController.h"
+#import "WineViewController.h"
+#import "LessonViewController.h"
+#import "OrderViewController.h"
 
 @implementation AppDelegate
 @synthesize window = _window;
+@synthesize tabBarController = _tabBarController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-    _dataListViewController = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
-    _navController = [[UINavigationController alloc] initWithRootViewController:_dataListViewController];
-    [self.window setRootViewController:_navController];
+    
+    self.tabBarController = [[UITabBarController alloc] init];
+    
+    DataListViewController *dataListVC = [[DataListViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerdataList = [[UINavigationController alloc] initWithRootViewController:dataListVC];
+    UITabBarItem *tabBarItem1 = [[UITabBarItem alloc] initWithTitle:@"Init"
+                                                              image:[UIImage imageNamed:@"123-id-card.png"]
+                                                                tag:0];
+    navControllerdataList.tabBarItem = tabBarItem1;
+    
+    YouTubeViewController *youtubeVC = [[YouTubeViewController alloc] initWithNibName:@"YouTubeViewController" bundle:nil];
+    UITabBarItem *tabBarItem2 = [[UITabBarItem alloc] initWithTitle:@"Vidéos"
+                                                              image:[UIImage imageNamed:@"43-film-roll.png"] 
+                                                                tag:1];
+    youtubeVC.tabBarItem = tabBarItem2;
+    
+    OrderViewController *orderVC = [[OrderViewController alloc] init];
+    UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Commandes"
+                                                              image:[UIImage imageNamed:@"80-shopping-cart.png"]                                                                tag:5];
+    orderVC.tabBarItem = tabBarItem3;
+    
+    WineViewController *wineVC = [[WineViewController alloc] init];
+    UITabBarItem *tabBarItem4 = [[UITabBarItem alloc] initWithTitle:@"Vins"
+                                                              image:[UIImage imageNamed:@"142-wine-bottle.png"]                                                                tag:3];
+    wineVC.tabBarItem = tabBarItem4;
+    
+    LessonViewController *lessonVC = [[LessonViewController alloc] init];
+    UITabBarItem *tabBarItem5 = [[UITabBarItem alloc] initWithTitle:@"Cours"
+                                                              image:[UIImage imageNamed:@"137-presentation.png"]                                                                tag:4];
+    lessonVC.tabBarItem = tabBarItem5;
+    
+    LocalFileViewController *localVC = [[LocalFileViewController alloc] initWithNibName:@"LocalFileViewController" bundle:nil];
+    UITabBarItem *tabBarItem6 = [[UITabBarItem alloc] initWithTitle:@"Local"
+                                                              image:nil
+                                                                tag:2];
+    localVC.tabBarItem = tabBarItem6;
+    
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, orderVC, wineVC, lessonVC, localVC, nil]];
+    [self.window setRootViewController:self.tabBarController];
+    [self.tabBarController.tabBar setTintColor:[UIColor grayColor]];
+    [self.tabBarController.tabBar setSelectedImageTintColor:[UIColor redColor]];
     [self.window makeKeyAndVisible];
     return YES;
 }

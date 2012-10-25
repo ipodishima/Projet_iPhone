@@ -17,7 +17,7 @@
     if (self)
     {
         _myLabel = [[UILabel alloc] initWithFrame:self.frame];
-        _myLabel.font = [UIFont fontWithName:@"Zapfino" size:12.0];
+        _myLabel.font = [UIFont fontWithName:@"Calibri" size:12.0];
         _myLabel.textAlignment = UITextAlignmentCenter;
         [self.contentView addSubview:_myLabel];
     }

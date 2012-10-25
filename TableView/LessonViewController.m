@@ -1,20 +1,18 @@
 //
-//  DataListViewController.m
+//  LessonViewController.m
 //  TableView
 //
-//  Created by Élèves on 21/09/12.
+//  Created by Élèves on 09/10/12.
 //  Copyright (c) 2012 EvaRousseau. All rights reserved.
 //
 
-#import "DataListViewController.h"
-#import "DetailListViewController.h"
-#import "CustomCell.h"
+#import "LessonViewController.h"
 
-@interface DataListViewController ()
+@interface LessonViewController ()
 
 @end
 
-@implementation DataListViewController
+@implementation LessonViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,14 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"Init";
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _dataToShow = [[NSArray alloc] initWithObjects:@"Mon Profil", @"Vidéos", @"A propos", nil];
 }
 
 - (void)viewDidUnload
@@ -54,26 +50,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [_dataToShow count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"CustomCell";
-    CustomCell *cell = (CustomCell*)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    if (cell == nil) 
-    {
-        cell = [[CustomCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    cell.myLabel.text = [_dataToShow objectAtIndex:[indexPath row]];
+    // Configure the cell...
     
     return cell;
 }
@@ -128,12 +122,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-    DetailListViewController *detailListViewController = [[DetailListViewController alloc]
-                                                          initWithNibName:@"DetailListViewController" bundle:nil];
-    detailListViewController.texteAAfficher = [_dataToShow objectAtIndex:[indexPath row]]; // Possibilité d’afficher un titre dans la barre de navigation
-    detailListViewController.title = [_dataToShow objectAtIndex:[indexPath row]];
-    [self.navigationController pushViewController:detailListViewController animated:YES];
-
 }
 
 @end

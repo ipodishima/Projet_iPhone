@@ -11,6 +11,7 @@
 @interface DetailListViewController : UIViewController
 {
     UILabel *_label;
+    UITextView *_textView;
 }
 @property (nonatomic, strong) NSString *texteAAfficher;
 @end

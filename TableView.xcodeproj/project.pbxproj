@@ -57,6 +57,9 @@
 		9B5E9D6616393C5700DDDBDD /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B5E9D6416393C5700DDDBDD /* MovieViewController.m */; };
 		9B5E9D6716393C5700DDDBDD /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E9D6516393C5700DDDBDD /* MovieViewController.xib */; };
 		9B5E9D6C16393FD300DDDBDD /* 111-user.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B5E9D6B16393FD300DDDBDD /* 111-user.png */; };
+		9B86EFC8169EBAD500F9C8F9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B86EFC7169EBAD500F9C8F9 /* logo.png */; };
+		A6944BFB16A1DA9C008476A4 /* Czaristite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6944BFA16A1DA9C008476A4 /* Czaristite.ttf */; };
+		A6944BFE16A1E048008476A4 /* CzaristiteBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6944BFD16A1E048008476A4 /* CzaristiteBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +145,9 @@
 		9B5E9D6416393C5700DDDBDD /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
 		9B5E9D6516393C5700DDDBDD /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 		9B5E9D6B16393FD300DDDBDD /* 111-user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111-user.png"; sourceTree = "<group>"; };
+		9B86EFC7169EBAD500F9C8F9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A6944BFA16A1DA9C008476A4 /* Czaristite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Czaristite.ttf; sourceTree = "<group>"; };
+		A6944BFD16A1E048008476A4 /* CzaristiteBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CzaristiteBold.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 				9B2B659E16245C8600149ADD /* AppDelegate.h */,
 				9B2B659F16245C8600149ADD /* AppDelegate.m */,
 				9B2B65A416245C8600149ADD /* InfoPlist.strings */,
+				9B86EFC7169EBAD500F9C8F9 /* logo.png */,
 				9B2B65A616245C8600149ADD /* main.m */,
 				9B2B65A716245C8600149ADD /* TableView-Info.plist */,
 				9B2B65A816245C8600149ADD /* TableView-Prefix.pch */,
@@ -395,6 +402,8 @@
 			children = (
 				9B2B65A116245C8600149ADD /* DetailListViewController.h */,
 				9B2B65A216245C8600149ADD /* DetailListViewController.m */,
+				A6944BFA16A1DA9C008476A4 /* Czaristite.ttf */,
+				A6944BFD16A1E048008476A4 /* CzaristiteBold.ttf */,
 				9B2B65A316245C8600149ADD /* DetailListViewController.xib */,
 			);
 			name = DetailList;
@@ -493,6 +502,9 @@
 				9B5E9D5F1639397700DDDBDD /* ProfileViewController.xib in Resources */,
 				9B5E9D6716393C5700DDDBDD /* MovieViewController.xib in Resources */,
 				9B5E9D6C16393FD300DDDBDD /* 111-user.png in Resources */,
+				9B86EFC8169EBAD500F9C8F9 /* logo.png in Resources */,
+				A6944BFB16A1DA9C008476A4 /* Czaristite.ttf in Resources */,
+				A6944BFE16A1E048008476A4 /* CzaristiteBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

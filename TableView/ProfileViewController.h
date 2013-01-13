@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ProfileViewController : UIViewController
+{
+    UITextField *_textField, *_textField2;
+    UILabel *_label;
+    UILabel *_label2;
+    UIButton *_button;
+}
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) UIColor *color;
 
 @end

@@ -49,9 +49,15 @@
     UIImageView *imageHolder = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
     imageHolder.frame = CGRectMake(0, 20, self.view.bounds.size.width, 70);
     imageHolder.contentMode = UIViewContentModeCenter;
-    imageHolder.backgroundColor = color;
-    
+    imageHolder.backgroundColor = color;    
     [self.view addSubview:imageHolder];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [button addTarget:self action:@selector(backToMain:)
+        forControlEvents:UIControlEventTouchUpInside];
+    [button setFrame:CGRectMake(self.view.bounds.size.width/2-35, self.view.bounds.size.height-40, 70, 30)];
+    [button setTitle:@"Retour" forState:UIControlStateNormal];
+    [self.view addSubview:button];
 }
 
 - (void)viewDidUnload
@@ -63,6 +69,12 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (void)backToMain:(id)sender
+{
+    // Informe le Delegate que l’on souhaite se retirer
+    [self.delegate modalViewControllerDidFinish:self];
 }
 
 @end

@@ -12,6 +12,8 @@
 #import "WineViewController.h"
 #import "LessonViewController.h"
 #import "OrderViewController.h"
+#import "SampleLoadViewController.h"
+#import "DataListViewController.h"
 
 @implementation AppDelegate
 @synthesize window = _window;
@@ -39,26 +41,37 @@
     
     OrderViewController *orderVC = [[OrderViewController alloc] init];
     UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Commandes"
-                                                              image:[UIImage imageNamed:@"80-shopping-cart.png"]                                                                tag:5];
+                                                              image:[UIImage imageNamed:@"80-shopping-cart.png"]
+                                                                tag:5];
     orderVC.tabBarItem = tabBarItem3;
     
     WineViewController *wineVC = [[WineViewController alloc] init];
     UITabBarItem *tabBarItem4 = [[UITabBarItem alloc] initWithTitle:@"Vins"
-                                                              image:[UIImage imageNamed:@"142-wine-bottle.png"]                                                                tag:3];
+                                                              image:[UIImage imageNamed:@"142-wine-bottle.png"]
+                                                                tag:3];
     wineVC.tabBarItem = tabBarItem4;
     
     LessonViewController *lessonVC = [[LessonViewController alloc] init];
     UITabBarItem *tabBarItem5 = [[UITabBarItem alloc] initWithTitle:@"Cours"
-                                                              image:[UIImage imageNamed:@"137-presentation.png"]                                                                tag:4];
+                                                              image:[UIImage imageNamed:@"137-presentation.png"]
+                                                                tag:4];
     lessonVC.tabBarItem = tabBarItem5;
     
-    LocalFileViewController *localVC = [[LocalFileViewController alloc] initWithNibName:@"LocalFileViewController" bundle:nil];
+   /* LocalFileViewController *localVC = [[LocalFileViewController alloc] initWithNibName:@"LocalFileViewController" bundle:nil];
     UITabBarItem *tabBarItem6 = [[UITabBarItem alloc] initWithTitle:@"Local"
                                                               image:nil
                                                                 tag:2];
-    localVC.tabBarItem = tabBarItem6;
+    localVC.tabBarItem = tabBarItem6;*/
     
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, orderVC, wineVC, lessonVC, localVC, nil]];
+    SampleLoadViewController *sample = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:sample];
+    UITabBarItem *tabBarItem6 = [[UITabBarItem alloc] initWithTitle:@"Sample"
+                                                              image:nil
+                                                                tag:6];
+    navControllerSample.tabBarItem = tabBarItem6;
+    
+    
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, orderVC, wineVC, lessonVC, navControllerSample, nil]];
     [self.window setRootViewController:self.tabBarController];
     [self.tabBarController.tabBar setTintColor:[UIColor grayColor]];
     [self.tabBarController.tabBar setSelectedImageTintColor:[UIColor redColor]];

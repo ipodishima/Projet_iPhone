@@ -39,11 +39,12 @@
                                                                 tag:1];
     youtubeVC.tabBarItem = tabBarItem2;
     
-    OrderViewController *orderVC = [[OrderViewController alloc] init];
+    OrderViewController *orderVC = [[OrderViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerOrderList = [[UINavigationController alloc] initWithRootViewController:orderVC];
     UITabBarItem *tabBarItem3 = [[UITabBarItem alloc] initWithTitle:@"Commandes"
                                                               image:[UIImage imageNamed:@"80-shopping-cart.png"]
                                                                 tag:5];
-    orderVC.tabBarItem = tabBarItem3;
+    navControllerOrderList.tabBarItem = tabBarItem3;
     
     WineViewController *wineVC = [[WineViewController alloc] init];
     UITabBarItem *tabBarItem4 = [[UITabBarItem alloc] initWithTitle:@"Vins"
@@ -71,7 +72,7 @@
     navControllerSample.tabBarItem = tabBarItem6;
     
     
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, orderVC, wineVC, lessonVC, navControllerSample, nil]];
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, navControllerOrderList, wineVC, lessonVC, navControllerSample, nil]];
     [self.window setRootViewController:self.tabBarController];
     [self.tabBarController.tabBar setTintColor:[UIColor grayColor]];
     [self.tabBarController.tabBar setSelectedImageTintColor:[UIColor redColor]];

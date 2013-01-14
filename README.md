@@ -1,12 +1,10 @@
-
 # DESCRIPTION 
 
-Application iPhone pour la société "Le Petit Ballon". Elle contient :  
-1. Abonnements et dégustation de vins. 
-2. Profil utilisateur. 
-3. Description des bouteilles du mois. 
-4. Vidéos du mois. 
-5. Cours d'oenologie: date, lieu et prix. Lien pour inscription en ligne. 
-6. Possibilité de commander des bouteilles. 
+Application iPhone pour la société "Le Petit Ballon". Onglets disponibles : 
+- Liste des vins et description des bouteilles du mois
+- Vidéos du mois 
+- Profil utilisateur 
+- Possibilité de commander des bouteilles 
+- Cours d'oenologie : date, lieu et prix. Lien pour inscripion en ligne. 
  
 

@@ -12,7 +12,7 @@
 
 @end
 
-@implementation ProfileViewController
+@implementation ProfileViewController 
 @synthesize name;
 @synthesize color = _color;
 
@@ -76,37 +76,25 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void) modalViewControllerDidFinish:(MyProfileViewController *)viewController
+{
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void) connectionView:(id)sender
 {
 
-    [_textField removeFromSuperview];
+    /*[_textField removeFromSuperview];
     [_textField2 removeFromSuperview];
     [_label removeFromSuperview];
     [_label2 removeFromSuperview];
-    [_button removeFromSuperview];
-    
-    self.view.backgroundColor = _color;
-    UIColor *abcColor = [UIColor colorWithRed:178/255.f green:34/255.f blue:34/255.f alpha:255/255.f];
-    _label = [[UILabel alloc] initWithFrame:CGRectMake(10, self.view.bounds.size.height/2, self.view.bounds.size.width-30, 25)];
-    UIFont *font = [UIFont fontWithName:@"CzaristiteBold" size:22];
-    [_label setFont:font];
-    self.name = _textField.text;
-    NSString *entry = name;
-    _label.text = [NSString stringWithFormat:@"Welcome %@", entry];
-    _label.textColor = abcColor;
-    _label.backgroundColor = _color;
-    _label.textAlignment = UITextAlignmentCenter;
-    [self.view addSubview:_label];
-    
-    UIImageView *imageHolder = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo.png"]];
-    imageHolder.frame = CGRectMake(0, 20, self.view.bounds.size.width, 70);
-    imageHolder.contentMode = UIViewContentModeCenter;
-    imageHolder.backgroundColor = _color;
-    
-    [self.view addSubview:imageHolder];
+    [_button removeFromSuperview];*/
+     self.name = _textField.text;
+    [self goToProfileView:UIModalTransitionStyleFlipHorizontal];
+
     
 }
 
@@ -120,6 +108,20 @@
     
     [super touchesBegan:touches withEvent:event ];
     
+}
+- (void)goToProfileView:(UIModalTransitionStyle)transitionStyle
+{
+    // Allocation d’une instance de SecondViewController
+    MyProfileViewController *controller = [[MyProfileViewController alloc] init];
+    
+    controller.name = name;
+    controller.color = _color;
+    // self est le Delegate
+    controller.delegate = self;
+    // On choisit l’animation selon le paramètre
+    controller.modalTransitionStyle = transitionStyle;
+    // On affiche le contrôleur
+    [self presentViewController:controller animated:YES completion:NULL];
 }
 
 

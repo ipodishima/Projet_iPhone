@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyProfileViewController.h"
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController <ModalViewControllerDelegate>
 {
     UITextField *_textField, *_textField2;
     UILabel *_label;
@@ -17,5 +18,5 @@
 }
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) UIColor *color;
-
+- (void)goToProfileView:(UIModalTransitionStyle)transitionStyle;
 @end

@@ -7,6 +7,9 @@
 //
 
 #import "OrderViewController.h"
+#import "WineObject.h"
+#import "CustomCell.h"
+#import "DetailWineViewController.h"
 
 @interface OrderViewController ()
 
@@ -33,6 +36,10 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    _activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_activity];
+    [[DownloadManager shared] loadLocalFileName:@"WineList" withDelegate:self];
+    
 }
 
 - (void)viewDidUnload
@@ -53,13 +60,13 @@
 {
 
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 0;
+    return _arrayOfContacts.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,8 +74,19 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
     
+    // Get the contact for the row
+    WineObject *w = [_arrayOfContacts objectAtIndex:indexPath.row];
+    
+    // Display!
+    cell.textLabel.text = [NSString stringWithFormat:@"%@", w.name];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", w.aoc];
+    cell.imageView.image = [UIImage imageNamed:w.image];
+    
+    //cell.myLabel.text = w.name;
     return cell;
 }
 
@@ -122,6 +140,63 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    DetailWineViewController *detailwineViewController = [[DetailWineViewController alloc]init];
+    detailwineViewController.texteAAfficher = [[_arrayOfContacts objectAtIndex:[indexPath row]]description];
+    detailwineViewController.name = [[_arrayOfContacts objectAtIndex:[indexPath row]]name];
+    detailwineViewController.title = [[_arrayOfContacts objectAtIndex:[indexPath row]]aoc];
+    [self.navigationController pushViewController:detailwineViewController animated:YES];
+}
+
+#pragma mark - DownloadDelegate protocol
+
+- (void) downloadOperation:(DownloadOperation *)operation didFailWithError:(NSError *)error
+{
+    // Stop activity indicator
+    [_activity stopAnimating];
+    NSLog(@"%@", error);
+    // Todo : handle the error
+}
+
+- (void) downloadOperation:(DownloadOperation *)operation didStartLoadingRequest:(NSMutableURLRequest *)request
+{
+    // Start the activity indicator
+    [_activity startAnimating];
+}
+
+- (void) downloadOperation:(DownloadOperation *)operation didLoadObject:(id)object
+{
+    // Stop activity indicator
+    [_activity stopAnimating];
+    
+    // Now, we need to go through all the objects loaded in the JSON, parse it, and create new Objective-C objects
+    // First, remove previous objects in instance array
+    [_arrayOfContacts removeAllObjects];
+    
+    if (!_arrayOfContacts)
+        _arrayOfContacts = [NSMutableArray new];
+    
+    // Enumerate the json array
+    for (NSDictionary *dic in object)
+    {
+        WineObject *w = [WineObject new];
+        
+        // Set properties from JSON 'object'
+        w.name = [dic objectForKey:@"Name"];
+        w.aoc = [dic objectForKey:@"AOC"];
+        w.image = [dic objectForKey:@"Image"];
+        w.description = [dic objectForKey:@"Description"];
+        
+        [_arrayOfContacts addObject:w];
+    }
+    
+    // Sort the array
+    //[_arrayOfContacts sortUsingDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"Name" ascending:YES]]];
+    
+    
+    // We are almost done. Please note that the parsing is made here just to avoid complexification. You should always create a model like YouTubeManager class which handles the parsing and give the data to the controller. Remember the MVC pattern
+    
+    // When we finished, reload the table view
+    [self.tableView reloadData];
 }
 
 @end

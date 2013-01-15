@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DownloadManager.h"
 
-@interface LessonViewController : UITableViewController
-
+@interface LessonViewController : UITableViewController <DownloadDelegate> 
+{
+    UIActivityIndicatorView *_activity;
+    NSMutableArray *_arrayOfContacts;
+}
 @end

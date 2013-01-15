@@ -26,17 +26,13 @@
 		9B2B65DA16245CAE00149ADD /* DebuggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65B916245CAE00149ADD /* DebuggerViewController.m */; };
 		9B2B65DB16245CAE00149ADD /* DownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65BC16245CAE00149ADD /* DownloadManager.m */; };
 		9B2B65DC16245CAE00149ADD /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65BE16245CAE00149ADD /* DownloadOperation.m */; };
-		9B2B65DD16245CAE00149ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65BF16245CAE00149ADD /* InfoPlist.strings */; };
 		9B2B65DE16245CAE00149ADD /* File.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65C116245CAE00149ADD /* File.json */; };
 		9B2B65DF16245CAE00149ADD /* LocalFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65C316245CAE00149ADD /* LocalFileViewController.m */; };
 		9B2B65E016245CAE00149ADD /* LocalFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65C416245CAE00149ADD /* LocalFileViewController.xib */; };
 		9B2B65E316245CAE00149ADD /* PerformanceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65C916245CAE00149ADD /* PerformanceCell.m */; };
 		9B2B65E416245CAE00149ADD /* PerformancesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65CB16245CAE00149ADD /* PerformancesViewController.m */; };
-		9B2B65E516245CAE00149ADD /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65CD16245CAE00149ADD /* WineViewController.m */; };
 		9B2B65E616245CAE00149ADD /* YouTubeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65CF16245CAE00149ADD /* YouTubeManager.m */; };
 		9B2B65E716245CAE00149ADD /* YouTubeVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65D116245CAE00149ADD /* YouTubeVideo.m */; };
-		9B2B65E816245CAE00149ADD /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65D316245CAE00149ADD /* YouTubeViewController.m */; };
-		9B2B65E916245CAE00149ADD /* YouTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65D416245CAE00149ADD /* YouTubeViewController.xib */; };
 		9B2B65F616245E9E00149ADD /* 142-wine-bottle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65F516245E9E00149ADD /* 142-wine-bottle.png */; };
 		9B2B65F916245FB800149ADD /* LessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65F816245FB800149ADD /* LessonViewController.m */; };
 		9B2B65FD1624606600149ADD /* 137-presentation.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65FC1624606600149ADD /* 137-presentation.png */; };
@@ -72,6 +68,9 @@
 		A6944BFE16A1E048008476A4 /* CzaristiteBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6944BFD16A1E048008476A4 /* CzaristiteBold.ttf */; };
 		A6C78B4316A5D14500C58B1D /* WineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C78B4216A5C97200C58B1D /* WineObject.m */; };
 		A6C78B4416A6039E00C58B1D /* WineList.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C78B4016A5C97200C58B1D /* WineList.json */; };
+		A6D05C1416A611C1004C093C /* WineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D05C1316A611C1004C093C /* WineViewController.m */; };
+		A6D05C1916A61249004C093C /* YouTubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D05C1716A61249004C093C /* YouTubeViewController.m */; };
+		A6D05C1A16A61249004C093C /* YouTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6D05C1816A61249004C093C /* YouTubeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,7 +83,7 @@
 		9B1B612E16A59F8C00731232 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9B2B659E16245C8600149ADD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B2B659F16245C8600149ADD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9B2B65A016245C8600149ADD /* bouteille15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bouteille15.png; path = ../../TableView/bouteille15.png; sourceTree = "<group>"; };
+		9B2B65A016245C8600149ADD /* bouteille15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bouteille15.png; sourceTree = "<group>"; };
 		9B2B65A116245C8600149ADD /* DetailListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailListViewController.h; sourceTree = "<group>"; };
 		9B2B65A216245C8600149ADD /* DetailListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailListViewController.m; sourceTree = "<group>"; };
 		9B2B65A316245C8600149ADD /* DetailListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailListViewController.xib; sourceTree = "<group>"; };
@@ -104,7 +103,6 @@
 		9B2B65BC16245CAE00149ADD /* DownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadManager.m; sourceTree = "<group>"; };
 		9B2B65BD16245CAE00149ADD /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
 		9B2B65BE16245CAE00149ADD /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
-		9B2B65C016245CAE00149ADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B2B65C116245CAE00149ADD /* File.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = File.json; sourceTree = "<group>"; };
 		9B2B65C216245CAE00149ADD /* LocalFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalFileViewController.h; sourceTree = "<group>"; };
 		9B2B65C316245CAE00149ADD /* LocalFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalFileViewController.m; sourceTree = "<group>"; };
@@ -114,16 +112,11 @@
 		9B2B65C916245CAE00149ADD /* PerformanceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformanceCell.m; sourceTree = "<group>"; };
 		9B2B65CA16245CAE00149ADD /* PerformancesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerformancesViewController.h; sourceTree = "<group>"; };
 		9B2B65CB16245CAE00149ADD /* PerformancesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerformancesViewController.m; sourceTree = "<group>"; };
-		9B2B65CC16245CAE00149ADD /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
-		9B2B65CD16245CAE00149ADD /* WineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineViewController.m; sourceTree = "<group>"; };
 		9B2B65CE16245CAE00149ADD /* YouTubeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeManager.h; sourceTree = "<group>"; };
 		9B2B65CF16245CAE00149ADD /* YouTubeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeManager.m; sourceTree = "<group>"; };
 		9B2B65D016245CAE00149ADD /* YouTubeVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeVideo.h; sourceTree = "<group>"; };
 		9B2B65D116245CAE00149ADD /* YouTubeVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeVideo.m; sourceTree = "<group>"; };
-		9B2B65D216245CAE00149ADD /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
-		9B2B65D316245CAE00149ADD /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
-		9B2B65D416245CAE00149ADD /* YouTubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeViewController.xib; sourceTree = "<group>"; };
-		9B2B65F516245E9E00149ADD /* 142-wine-bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "142-wine-bottle.png"; path = "../../TableView/142-wine-bottle.png"; sourceTree = "<group>"; };
+		9B2B65F516245E9E00149ADD /* 142-wine-bottle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "142-wine-bottle.png"; sourceTree = "<group>"; };
 		9B2B65F716245FB800149ADD /* LessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonViewController.h; sourceTree = "<group>"; };
 		9B2B65F816245FB800149ADD /* LessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonViewController.m; sourceTree = "<group>"; };
 		9B2B65FC1624606600149ADD /* 137-presentation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "137-presentation.png"; sourceTree = "<group>"; };
@@ -178,6 +171,11 @@
 		A6C78B4016A5C97200C58B1D /* WineList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = WineList.json; path = TableView/WineList.json; sourceTree = SOURCE_ROOT; };
 		A6C78B4116A5C97200C58B1D /* WineObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WineObject.h; path = TableView/WineObject.h; sourceTree = SOURCE_ROOT; };
 		A6C78B4216A5C97200C58B1D /* WineObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WineObject.m; path = TableView/WineObject.m; sourceTree = SOURCE_ROOT; };
+		A6D05C1216A611C1004C093C /* WineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineViewController.h; sourceTree = "<group>"; };
+		A6D05C1316A611C1004C093C /* WineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineViewController.m; sourceTree = "<group>"; };
+		A6D05C1616A61249004C093C /* YouTubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeViewController.h; sourceTree = "<group>"; };
+		A6D05C1716A61249004C093C /* YouTubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeViewController.m; sourceTree = "<group>"; };
+		A6D05C1816A61249004C093C /* YouTubeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YouTubeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +199,8 @@
 		9B2B659D16245C8600149ADD /* TableView */ = {
 			isa = PBXGroup;
 			children = (
+				A6D05C1516A6121B004C093C /* YouTube */,
+				A6D05C1016A610EB004C093C /* Wine */,
 				9B2B66061624623D00149ADD /* Order */,
 				9B2B66021624617F00149ADD /* Lessons */,
 				9B2B65F416245DD600149ADD /* Init */,
@@ -226,7 +226,6 @@
 				9B2B65EC16245D2A00149ADD /* Performances */,
 				9B2B65EB16245D1800149ADD /* Debug */,
 				9B2B65EA16245CF000149ADD /* Local */,
-				9B2B65BF16245CAE00149ADD /* InfoPlist.strings */,
 				9B2B65C116245CAE00149ADD /* File.json */,
 				9B2B65C716245CAE00149ADD /* MSToolTips-Prefix.pch */,
 			);
@@ -270,19 +269,8 @@
 		9B2B65ED16245D4600149ADD /* Wine */ = {
 			isa = PBXGroup;
 			children = (
-				A6C78B3C16A5C97200C58B1D /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */,
-				A6C78B3D16A5C97200C58B1D /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */,
-				A6C78B3E16A5C97200C58B1D /* julienas-2011-remi-paola-benon.png */,
-				A6C78B3F16A5C97200C58B1D /* la-roche-beaucourt-2010-chateau-pierrail.png */,
-				9B2B65A016245C8600149ADD /* bouteille15.png */,
-				9B2B65F516245E9E00149ADD /* 142-wine-bottle.png */,
 				9B2B65B316245CAE00149ADD /* bouteille.png */,
 				9B2B65B416245CAE00149ADD /* bouteille@2x.png */,
-				9B2B65CC16245CAE00149ADD /* WineViewController.h */,
-				9B2B65CD16245CAE00149ADD /* WineViewController.m */,
-				A6C78B4016A5C97200C58B1D /* WineList.json */,
-				A6C78B4116A5C97200C58B1D /* WineObject.h */,
-				A6C78B4216A5C97200C58B1D /* WineObject.m */,
 			);
 			name = Wine;
 			sourceTree = "<group>";
@@ -295,9 +283,6 @@
 				9B2B65CF16245CAE00149ADD /* YouTubeManager.m */,
 				9B2B65D016245CAE00149ADD /* YouTubeVideo.h */,
 				9B2B65D116245CAE00149ADD /* YouTubeVideo.m */,
-				9B2B65D216245CAE00149ADD /* YouTubeViewController.h */,
-				9B2B65D316245CAE00149ADD /* YouTubeViewController.m */,
-				9B2B65D416245CAE00149ADD /* YouTubeViewController.xib */,
 			);
 			name = YouTube;
 			sourceTree = "<group>";
@@ -481,6 +466,34 @@
 			name = MovieView;
 			sourceTree = "<group>";
 		};
+		A6D05C1016A610EB004C093C /* Wine */ = {
+			isa = PBXGroup;
+			children = (
+				A6D05C1216A611C1004C093C /* WineViewController.h */,
+				A6D05C1316A611C1004C093C /* WineViewController.m */,
+				A6C78B4016A5C97200C58B1D /* WineList.json */,
+				A6C78B4116A5C97200C58B1D /* WineObject.h */,
+				A6C78B4216A5C97200C58B1D /* WineObject.m */,
+				A6C78B3C16A5C97200C58B1D /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */,
+				A6C78B3D16A5C97200C58B1D /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */,
+				A6C78B3E16A5C97200C58B1D /* julienas-2011-remi-paola-benon.png */,
+				A6C78B3F16A5C97200C58B1D /* la-roche-beaucourt-2010-chateau-pierrail.png */,
+				9B2B65A016245C8600149ADD /* bouteille15.png */,
+				9B2B65F516245E9E00149ADD /* 142-wine-bottle.png */,
+			);
+			name = Wine;
+			sourceTree = "<group>";
+		};
+		A6D05C1516A6121B004C093C /* YouTube */ = {
+			isa = PBXGroup;
+			children = (
+				A6D05C1616A61249004C093C /* YouTubeViewController.h */,
+				A6D05C1716A61249004C093C /* YouTubeViewController.m */,
+				A6D05C1816A61249004C093C /* YouTubeViewController.xib */,
+			);
+			name = YouTube;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,10 +554,8 @@
 				9B2B65D616245CAE00149ADD /* bouteille.png in Resources */,
 				9B2B65D716245CAE00149ADD /* bouteille@2x.png in Resources */,
 				9B2B65D916245CAE00149ADD /* DebuggerDetailViewController.xib in Resources */,
-				9B2B65DD16245CAE00149ADD /* InfoPlist.strings in Resources */,
 				9B2B65DE16245CAE00149ADD /* File.json in Resources */,
 				9B2B65E016245CAE00149ADD /* LocalFileViewController.xib in Resources */,
-				9B2B65E916245CAE00149ADD /* YouTubeViewController.xib in Resources */,
 				9B2B65F616245E9E00149ADD /* 142-wine-bottle.png in Resources */,
 				9B2B65FD1624606600149ADD /* 137-presentation.png in Resources */,
 				9B2B65FF162460B600149ADD /* 80-shopping-cart.png in Resources */,
@@ -559,6 +570,7 @@
 				9B2FAB1816A4092B00799538 /* SampleLoad.json in Resources */,
 				9B1B612016A5934500731232 /* LessonList.json in Resources */,
 				A6C78B4416A6039E00C58B1D /* WineList.json in Resources */,
+				A6D05C1A16A61249004C093C /* YouTubeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,10 +598,8 @@
 				9B2B65DF16245CAE00149ADD /* LocalFileViewController.m in Sources */,
 				9B2B65E316245CAE00149ADD /* PerformanceCell.m in Sources */,
 				9B2B65E416245CAE00149ADD /* PerformancesViewController.m in Sources */,
-				9B2B65E516245CAE00149ADD /* WineViewController.m in Sources */,
 				9B2B65E616245CAE00149ADD /* YouTubeManager.m in Sources */,
 				9B2B65E716245CAE00149ADD /* YouTubeVideo.m in Sources */,
-				9B2B65E816245CAE00149ADD /* YouTubeViewController.m in Sources */,
 				9B2B65F916245FB800149ADD /* LessonViewController.m in Sources */,
 				9B2B6605162461D700149ADD /* OrderViewController.m in Sources */,
 				9B5E9D5E1639397700DDDBDD /* ProfileViewController.m in Sources */,
@@ -600,6 +610,8 @@
 				9B2FAB3D16A4538300799538 /* DetailWineViewController.m in Sources */,
 				9B1B611E16A5915B00731232 /* LessonObject.m in Sources */,
 				9B1B612316A597AA00731232 /* DetailLessonViewController.m in Sources */,
+				A6D05C1416A611C1004C093C /* WineViewController.m in Sources */,
+				A6D05C1916A61249004C093C /* YouTubeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,14 +622,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				9B2B65A516245C8600149ADD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9B2B65BF16245CAE00149ADD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9B2B65C016245CAE00149ADD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

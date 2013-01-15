@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1B611E16A5915B00731232 /* LessonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B611D16A5915B00731232 /* LessonObject.m */; };
+		9B1B612016A5934500731232 /* LessonList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B1B611F16A5934500731232 /* LessonList.json */; };
+		9B1B612316A597AA00731232 /* DetailLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B1B612216A597AA00731232 /* DetailLessonViewController.m */; };
+		9B1B612D16A59F8200731232 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B612C16A59F8200731232 /* CoreLocation.framework */; };
+		9B1B612F16A59F8C00731232 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B1B612E16A59F8C00731232 /* MapKit.framework */; };
 		9B2B65A916245C8600149ADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B659F16245C8600149ADD /* AppDelegate.m */; };
 		9B2B65AA16245C8600149ADD /* bouteille15.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2B65A016245C8600149ADD /* bouteille15.png */; };
 		9B2B65AB16245C8600149ADD /* DetailListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2B65A216245C8600149ADD /* DetailListViewController.m */; };
@@ -49,12 +54,6 @@
 		9B2FAB1716A4092B00799538 /* SampleLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FAB1316A4092B00799538 /* SampleLoadViewController.m */; };
 		9B2FAB1816A4092B00799538 /* SampleLoad.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2FAB1416A4092B00799538 /* SampleLoad.json */; };
 		9B2FAB1916A4092B00799538 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FAB1616A4092B00799538 /* Contact.m */; };
-		9B2FAB2516A4147700799538 /* WineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FAB2416A4147700799538 /* WineObject.m */; };
-		9B2FAB2716A414D000799538 /* WineList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B2FAB2616A414D000799538 /* WineList.json */; };
-		9B2FAB2A16A429D400799538 /* la-roche-beaucourt-2010-chateau-pierrail.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2FAB2816A429D400799538 /* la-roche-beaucourt-2010-chateau-pierrail.png */; };
-		9B2FAB2B16A429D400799538 /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2FAB2916A429D400799538 /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */; };
-		9B2FAB2E16A429E200799538 /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2FAB2C16A429E200799538 /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */; };
-		9B2FAB2F16A429E200799538 /* julienas-2011-remi-paola-benon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B2FAB2D16A429E200799538 /* julienas-2011-remi-paola-benon.png */; };
 		9B2FAB3616A43A9900799538 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FAB3516A43A9900799538 /* MyProfileViewController.m */; };
 		9B2FAB3D16A4538300799538 /* DetailWineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B2FAB3C16A4538200799538 /* DetailWineViewController.m */; };
 		9B335C19160C9549004885DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B335C18160C9549004885DC /* UIKit.framework */; };
@@ -71,9 +70,18 @@
 		9B86EFC8169EBAD500F9C8F9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B86EFC7169EBAD500F9C8F9 /* logo.png */; };
 		A6944BFB16A1DA9C008476A4 /* Czaristite.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6944BFA16A1DA9C008476A4 /* Czaristite.ttf */; };
 		A6944BFE16A1E048008476A4 /* CzaristiteBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6944BFD16A1E048008476A4 /* CzaristiteBold.ttf */; };
+		A6C78B4316A5D14500C58B1D /* WineObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C78B4216A5C97200C58B1D /* WineObject.m */; };
+		A6C78B4416A6039E00C58B1D /* WineList.json in Resources */ = {isa = PBXBuildFile; fileRef = A6C78B4016A5C97200C58B1D /* WineList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1B611C16A5915B00731232 /* LessonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonObject.h; sourceTree = "<group>"; };
+		9B1B611D16A5915B00731232 /* LessonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonObject.m; sourceTree = "<group>"; };
+		9B1B611F16A5934500731232 /* LessonList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LessonList.json; sourceTree = "<group>"; };
+		9B1B612116A597AA00731232 /* DetailLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailLessonViewController.h; sourceTree = "<group>"; };
+		9B1B612216A597AA00731232 /* DetailLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailLessonViewController.m; sourceTree = "<group>"; };
+		9B1B612C16A59F8200731232 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9B1B612E16A59F8C00731232 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9B2B659E16245C8600149ADD /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9B2B659F16245C8600149ADD /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9B2B65A016245C8600149ADD /* bouteille15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bouteille15.png; path = ../../TableView/bouteille15.png; sourceTree = "<group>"; };
@@ -140,13 +148,6 @@
 		9B2FAB1416A4092B00799538 /* SampleLoad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleLoad.json; sourceTree = "<group>"; };
 		9B2FAB1516A4092B00799538 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		9B2FAB1616A4092B00799538 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		9B2FAB2316A4147700799538 /* WineObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WineObject.h; sourceTree = "<group>"; };
-		9B2FAB2416A4147700799538 /* WineObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WineObject.m; sourceTree = "<group>"; };
-		9B2FAB2616A414D000799538 /* WineList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WineList.json; sourceTree = "<group>"; };
-		9B2FAB2816A429D400799538 /* la-roche-beaucourt-2010-chateau-pierrail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "la-roche-beaucourt-2010-chateau-pierrail.png"; sourceTree = "<group>"; };
-		9B2FAB2916A429D400799538 /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "champagne-hugues-de-coulmet-maison-pierre-moncuit.png"; sourceTree = "<group>"; };
-		9B2FAB2C16A429E200799538 /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png"; sourceTree = "<group>"; };
-		9B2FAB2D16A429E200799538 /* julienas-2011-remi-paola-benon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "julienas-2011-remi-paola-benon.png"; sourceTree = "<group>"; };
 		9B2FAB3416A43A9900799538 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
 		9B2FAB3516A43A9900799538 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 		9B2FAB3B16A4538200799538 /* DetailWineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailWineViewController.h; sourceTree = "<group>"; };
@@ -170,6 +171,13 @@
 		9B86EFC7169EBAD500F9C8F9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A6944BFA16A1DA9C008476A4 /* Czaristite.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Czaristite.ttf; sourceTree = "<group>"; };
 		A6944BFD16A1E048008476A4 /* CzaristiteBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CzaristiteBold.ttf; sourceTree = "<group>"; };
+		A6C78B3C16A5C97200C58B1D /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "champagne-hugues-de-coulmet-maison-pierre-moncuit.png"; path = "TableView/champagne-hugues-de-coulmet-maison-pierre-moncuit.png"; sourceTree = SOURCE_ROOT; };
+		A6C78B3D16A5C97200C58B1D /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png"; path = "TableView/chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png"; sourceTree = SOURCE_ROOT; };
+		A6C78B3E16A5C97200C58B1D /* julienas-2011-remi-paola-benon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "julienas-2011-remi-paola-benon.png"; path = "TableView/julienas-2011-remi-paola-benon.png"; sourceTree = SOURCE_ROOT; };
+		A6C78B3F16A5C97200C58B1D /* la-roche-beaucourt-2010-chateau-pierrail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "la-roche-beaucourt-2010-chateau-pierrail.png"; path = "TableView/la-roche-beaucourt-2010-chateau-pierrail.png"; sourceTree = SOURCE_ROOT; };
+		A6C78B4016A5C97200C58B1D /* WineList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = WineList.json; path = TableView/WineList.json; sourceTree = SOURCE_ROOT; };
+		A6C78B4116A5C97200C58B1D /* WineObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WineObject.h; path = TableView/WineObject.h; sourceTree = SOURCE_ROOT; };
+		A6C78B4216A5C97200C58B1D /* WineObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = WineObject.m; path = TableView/WineObject.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1B612F16A59F8C00731232 /* MapKit.framework in Frameworks */,
+				9B1B612D16A59F8200731232 /* CoreLocation.framework in Frameworks */,
 				9B2CE3D6161C80B500EFC86A /* MediaPlayer.framework in Frameworks */,
 				9B2CE3D4161C809F00EFC86A /* QuartzCore.framework in Frameworks */,
 				9B335C19160C9549004885DC /* UIKit.framework in Frameworks */,
@@ -260,19 +270,19 @@
 		9B2B65ED16245D4600149ADD /* Wine */ = {
 			isa = PBXGroup;
 			children = (
-				9B2FAB2C16A429E200799538 /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */,
-				9B2FAB2D16A429E200799538 /* julienas-2011-remi-paola-benon.png */,
-				9B2FAB2816A429D400799538 /* la-roche-beaucourt-2010-chateau-pierrail.png */,
-				9B2FAB2916A429D400799538 /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */,
+				A6C78B3C16A5C97200C58B1D /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png */,
+				A6C78B3D16A5C97200C58B1D /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png */,
+				A6C78B3E16A5C97200C58B1D /* julienas-2011-remi-paola-benon.png */,
+				A6C78B3F16A5C97200C58B1D /* la-roche-beaucourt-2010-chateau-pierrail.png */,
 				9B2B65A016245C8600149ADD /* bouteille15.png */,
 				9B2B65F516245E9E00149ADD /* 142-wine-bottle.png */,
 				9B2B65B316245CAE00149ADD /* bouteille.png */,
 				9B2B65B416245CAE00149ADD /* bouteille@2x.png */,
 				9B2B65CC16245CAE00149ADD /* WineViewController.h */,
 				9B2B65CD16245CAE00149ADD /* WineViewController.m */,
-				9B2FAB2316A4147700799538 /* WineObject.h */,
-				9B2FAB2416A4147700799538 /* WineObject.m */,
-				9B2FAB2616A414D000799538 /* WineList.json */,
+				A6C78B4016A5C97200C58B1D /* WineList.json */,
+				A6C78B4116A5C97200C58B1D /* WineObject.h */,
+				A6C78B4216A5C97200C58B1D /* WineObject.m */,
 			);
 			name = Wine;
 			sourceTree = "<group>";
@@ -325,6 +335,11 @@
 				9B2B65F716245FB800149ADD /* LessonViewController.h */,
 				9B2B65F816245FB800149ADD /* LessonViewController.m */,
 				9B2B65FC1624606600149ADD /* 137-presentation.png */,
+				9B1B611C16A5915B00731232 /* LessonObject.h */,
+				9B1B611D16A5915B00731232 /* LessonObject.m */,
+				9B1B611F16A5934500731232 /* LessonList.json */,
+				9B1B612116A597AA00731232 /* DetailLessonViewController.h */,
+				9B1B612216A597AA00731232 /* DetailLessonViewController.m */,
 			);
 			name = Lessons;
 			sourceTree = "<group>";
@@ -407,6 +422,8 @@
 		9B335C17160C9549004885DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9B1B612C16A59F8200731232 /* CoreLocation.framework */,
+				9B1B612E16A59F8C00731232 /* MapKit.framework */,
 				9B2CE3D5161C80B500EFC86A /* MediaPlayer.framework */,
 				9B2CE3D3161C809F00EFC86A /* QuartzCore.framework */,
 				9B335C18160C9549004885DC /* UIKit.framework */,
@@ -540,11 +557,8 @@
 				A6944BFB16A1DA9C008476A4 /* Czaristite.ttf in Resources */,
 				A6944BFE16A1E048008476A4 /* CzaristiteBold.ttf in Resources */,
 				9B2FAB1816A4092B00799538 /* SampleLoad.json in Resources */,
-				9B2FAB2716A414D000799538 /* WineList.json in Resources */,
-				9B2FAB2A16A429D400799538 /* la-roche-beaucourt-2010-chateau-pierrail.png in Resources */,
-				9B2FAB2B16A429D400799538 /* champagne-hugues-de-coulmet-maison-pierre-moncuit.png in Resources */,
-				9B2FAB2E16A429E200799538 /* chateau-beard-la-chapelle-saint-emilion-grand-cru-2009.png in Resources */,
-				9B2FAB2F16A429E200799538 /* julienas-2011-remi-paola-benon.png in Resources */,
+				9B1B612016A5934500731232 /* LessonList.json in Resources */,
+				A6C78B4416A6039E00C58B1D /* WineList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6C78B4316A5D14500C58B1D /* WineObject.m in Sources */,
 				9B335C31160C956E004885DC /* DataListViewController.m in Sources */,
 				9B335C39160CA04A004885DC /* CustomCell.m in Sources */,
 				9B2CE3C3161C7E3100EFC86A /* iCarousel.m in Sources */,
@@ -581,9 +596,10 @@
 				9B5E9D6616393C5700DDDBDD /* MovieViewController.m in Sources */,
 				9B2FAB1716A4092B00799538 /* SampleLoadViewController.m in Sources */,
 				9B2FAB1916A4092B00799538 /* Contact.m in Sources */,
-				9B2FAB2516A4147700799538 /* WineObject.m in Sources */,
 				9B2FAB3616A43A9900799538 /* MyProfileViewController.m in Sources */,
 				9B2FAB3D16A4538300799538 /* DetailWineViewController.m in Sources */,
+				9B1B611E16A5915B00731232 /* LessonObject.m in Sources */,
+				9B1B612316A597AA00731232 /* DetailLessonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,7 +680,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableView/TableView-Prefix.pch";
 				INFOPLIST_FILE = "TableView/TableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -675,7 +693,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TableView/TableView-Prefix.pch";
 				INFOPLIST_FILE = "TableView/TableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

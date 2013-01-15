@@ -18,14 +18,6 @@
 @synthesize name;
 @synthesize color;
 
-/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}*/
 
 - (void)viewDidLoad
 {
@@ -34,7 +26,7 @@
     
     
     self.view.backgroundColor = color;
-    //UIColor *abcColor = [UIColor colorWithRed:178/255.f green:34/255.f blue:34/255.f alpha:255/255.f];
+    
     _label = [[UILabel alloc] initWithFrame:CGRectMake(10, self.view.bounds.size.height/2, self.view.bounds.size.width-30, 25)];
     UIFont *font = [UIFont fontWithName:@"CzaristiteBold" size:30];
     [_label setFont:font];

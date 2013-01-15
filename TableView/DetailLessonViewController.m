@@ -40,11 +40,11 @@
     _label.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.view addSubview:_label];
     
-    _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 40, self.view.bounds.size.width-20, self.view.bounds.size.height)];
+    _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 40, self.view.bounds.size.width-20, 140)];
     [_textView setFont:font];
     _textView.textColor = [UIColor whiteColor];
-    //_textView.text = [NSString stringWithFormat:@"Lieu: %@ \r\n\r\n%@", address, _texteAAfficher];
-    _textView.text = [NSString stringWithFormat:@"Lieu: %@", address];
+    _textView.text = [NSString stringWithFormat:@"Lieu: %@ \r\n\r\n%@", address, _texteAAfficher];
+    //_textView.text = [NSString stringWithFormat:@"Lieu: %@", address];
     _textView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.view addSubview:_textView];
     

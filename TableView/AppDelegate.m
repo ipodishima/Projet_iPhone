@@ -52,27 +52,15 @@
                                                                 tag:3];
     wineVC.tabBarItem = tabBarItem4;
     
-    LessonViewController *lessonVC = [[LessonViewController alloc] init];
+    LessonViewController *lessonVC = [[LessonViewController alloc] initWithStyle:UITableViewStylePlain];
+    UINavigationController *navControllerLessonList = [[UINavigationController alloc] initWithRootViewController:lessonVC];
     UITabBarItem *tabBarItem5 = [[UITabBarItem alloc] initWithTitle:@"Cours"
                                                               image:[UIImage imageNamed:@"137-presentation.png"]
                                                                 tag:4];
-    lessonVC.tabBarItem = tabBarItem5;
-    
-   /* LocalFileViewController *localVC = [[LocalFileViewController alloc] initWithNibName:@"LocalFileViewController" bundle:nil];
-    UITabBarItem *tabBarItem6 = [[UITabBarItem alloc] initWithTitle:@"Local"
-                                                              image:nil
-                                                                tag:2];
-    localVC.tabBarItem = tabBarItem6;*/
-    
-    SampleLoadViewController *sample = [[SampleLoadViewController alloc] initWithStyle:UITableViewStylePlain];
-    UINavigationController *navControllerSample = [[UINavigationController alloc] initWithRootViewController:sample];
-    UITabBarItem *tabBarItem6 = [[UITabBarItem alloc] initWithTitle:@"Sample"
-                                                              image:nil
-                                                                tag:6];
-    navControllerSample.tabBarItem = tabBarItem6;
+    navControllerLessonList.tabBarItem = tabBarItem5;
     
     
-    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, navControllerOrderList, wineVC, lessonVC, navControllerSample, nil]];
+    [self.tabBarController setViewControllers:[NSArray arrayWithObjects:navControllerdataList, youtubeVC, navControllerOrderList, wineVC, navControllerLessonList, nil]];
     [self.window setRootViewController:self.tabBarController];
     [self.tabBarController.tabBar setTintColor:[UIColor grayColor]];
     [self.tabBarController.tabBar setSelectedImageTintColor:[UIColor redColor]];

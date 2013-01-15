@@ -38,6 +38,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     _dataToShow = [[NSArray alloc] initWithObjects:@"Mon Profil", @"Vidéos", @"A propos", nil];
+    UIView *footer = [[UIView alloc] initWithFrame:CGRectZero];
+    self.tableView.tableFooterView = footer;
 }
 
 - (void)viewDidUnload

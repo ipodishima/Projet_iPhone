@@ -37,7 +37,7 @@
     [_label setFont:font];
     _label.textColor = [UIColor whiteColor];
     //_textView.textAlignment = UITextAlignmentCenter;
-    _label.text = [NSString stringWithFormat:@"Prix: %0.2f", price];
+    _label.text = [NSString stringWithFormat:@"Prix: %0.2f€", price];
     _label.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.view addSubview:_label];
     

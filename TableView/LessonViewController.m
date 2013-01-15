@@ -30,14 +30,10 @@
     [super viewDidLoad];
     self.title = @"Cours";
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    _activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    // Set it to the right on navigation bar
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_activity];
+
     [[DownloadManager shared] loadLocalFileName:@"LessonList" withDelegate:self];
 }
 
@@ -80,7 +76,9 @@
     LessonObject *l = [_arrayOfContacts objectAtIndex:indexPath.row];
     
     // Display!
+    UIColor *color = [UIColor colorWithRed:70/255.f green:130/255.f blue:180/255.f alpha:255/255.f];
     cell.textLabel.text = [NSString stringWithFormat:@"%@", l.title];
+    cell.textLabel.textColor = color;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", l.date];
     //cell.imageView.image = [UIImage imageNamed:c.image];
     return cell;
@@ -137,7 +135,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     DetailLessonViewController *detailViewController = [[DetailLessonViewController alloc]init];
-    detailViewController.tabBarItem = self.tabBarItem;
+    //detailViewController.tabBarItem = self.tabBarItem;
     detailViewController.texteAAfficher = [[_arrayOfContacts objectAtIndex:[indexPath row]]description];
     detailViewController.address = [[_arrayOfContacts objectAtIndex:[indexPath row]]adr];
     detailViewController.price = [[_arrayOfContacts objectAtIndex:[indexPath row]]price];
@@ -151,22 +149,18 @@
 
 - (void) downloadOperation:(DownloadOperation *)operation didFailWithError:(NSError *)error
 {
-    // Stop activity indicator
-    [_activity stopAnimating];
     NSLog(@"%@", error);
     // Todo : handle the error
 }
 
 - (void) downloadOperation:(DownloadOperation *)operation didStartLoadingRequest:(NSMutableURLRequest *)request
 {
-    // Start the activity indicator
-    [_activity startAnimating];
+
 }
 
 - (void) downloadOperation:(DownloadOperation *)operation didLoadObject:(id)object
 {
-    // Stop activity indicator
-    [_activity stopAnimating];
+
     
     // Now, we need to go through all the objects loaded in the JSON, parse it, and create new Objective-C objects
     // First, remove previous objects in instance array

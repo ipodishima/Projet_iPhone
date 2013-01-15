@@ -427,6 +427,7 @@
 			);
 			name = "Sample Load File";
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 		9B5E9D6816393DC000DDDBDD /* DetailList */ = {
 			isa = PBXGroup;

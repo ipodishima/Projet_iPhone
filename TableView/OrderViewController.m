@@ -38,7 +38,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     _activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_activity];
-    [[DownloadManager shared] loadLocalFileName:@"WineList" withDelegate:self];
+    [[DownloadManager shared] loadLocalFileName:@"SampleLoad" withDelegate:self];
     
 }
 
@@ -141,8 +141,10 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     DetailWineViewController *detailwineViewController = [[DetailWineViewController alloc]init];
+    detailwineViewController.tabBarItem = self.tabBarItem;
     detailwineViewController.texteAAfficher = [[_arrayOfContacts objectAtIndex:[indexPath row]]description];
     detailwineViewController.name = [[_arrayOfContacts objectAtIndex:[indexPath row]]name];
+    detailwineViewController.price = [[_arrayOfContacts objectAtIndex:[indexPath row]]price];
     detailwineViewController.title = [[_arrayOfContacts objectAtIndex:[indexPath row]]aoc];
     [self.navigationController pushViewController:detailwineViewController animated:YES];
 }
@@ -185,6 +187,7 @@
         w.aoc = [dic objectForKey:@"AOC"];
         w.image = [dic objectForKey:@"Image"];
         w.description = [dic objectForKey:@"Description"];
+        w.price = [[dic objectForKey:@"Price"] floatValue];
         
         [_arrayOfContacts addObject:w];
     }

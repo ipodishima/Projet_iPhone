@@ -141,6 +141,8 @@
     detailViewController.texteAAfficher = [[_arrayOfContacts objectAtIndex:[indexPath row]]description];
     detailViewController.address = [[_arrayOfContacts objectAtIndex:[indexPath row]]adr];
     detailViewController.price = [[_arrayOfContacts objectAtIndex:[indexPath row]]price];
+    detailViewController.longitude = [[_arrayOfContacts objectAtIndex:[indexPath row]]longitude];
+    detailViewController.latitude = [[_arrayOfContacts objectAtIndex:[indexPath row]]latitude];
     detailViewController.title = [[_arrayOfContacts objectAtIndex:[indexPath row]]title];
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
@@ -184,6 +186,8 @@
         l.adr = [dic objectForKey:@"Address"];
         l.price = [[dic objectForKey:@"Price"]integerValue];
         l.description = [dic objectForKey:@"Description"];
+        l.longitude = [[dic objectForKey:@"long"]floatValue];
+        l.latitude = [[dic objectForKey:@"lat"]floatValue];
         
         // Add it to the array
         [_arrayOfContacts addObject:l];

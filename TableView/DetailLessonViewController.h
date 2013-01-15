@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @interface DetailLessonViewController : UIViewController
 {
@@ -16,4 +18,6 @@
 @property (nonatomic, strong) NSString *texteAAfficher;
 @property (nonatomic, strong) NSString *address;
 @property (nonatomic, assign) NSInteger price;
+@property (nonatomic, assign) float longitude;
+@property (nonatomic, assign) float latitude;
 @end

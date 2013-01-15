@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString *adr;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic, assign) NSInteger price;
+@property (nonatomic, assign) float longitude;
+@property (nonatomic, assign) float latitude;
 @end

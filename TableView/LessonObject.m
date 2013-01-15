@@ -9,5 +9,5 @@
 #import "LessonObject.h"
 
 @implementation LessonObject
-@synthesize date, adr, description, price, title;
+@synthesize date, adr, description, price, title, longitude, latitude;
 @end

@@ -10,14 +10,12 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
+@class LessonObject;
+
 @interface DetailLessonViewController : UIViewController
 {
     UILabel *_label;
     UITextView *_textView;
 }
-@property (nonatomic, strong) NSString *texteAAfficher;
-@property (nonatomic, strong) NSString *address;
-@property (nonatomic, assign) NSInteger price;
-@property (nonatomic, assign) float longitude;
-@property (nonatomic, assign) float latitude;
+@property (nonatomic, strong) LessonObject *lesson;
 @end

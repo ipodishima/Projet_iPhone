@@ -135,13 +135,7 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     DetailLessonViewController *detailViewController = [[DetailLessonViewController alloc]init];
-    //detailViewController.tabBarItem = self.tabBarItem;
-    detailViewController.texteAAfficher = [[_arrayOfContacts objectAtIndex:[indexPath row]]description];
-    detailViewController.address = [[_arrayOfContacts objectAtIndex:[indexPath row]]adr];
-    detailViewController.price = [[_arrayOfContacts objectAtIndex:[indexPath row]]price];
-    detailViewController.longitude = [[_arrayOfContacts objectAtIndex:[indexPath row]]longitude];
-    detailViewController.latitude = [[_arrayOfContacts objectAtIndex:[indexPath row]]latitude];
-    detailViewController.title = [[_arrayOfContacts objectAtIndex:[indexPath row]]title];
+    detailViewController.lesson = [_arrayOfContacts objectAtIndex:[indexPath row]];
     [self.navigationController pushViewController:detailViewController animated:YES];
 }
 

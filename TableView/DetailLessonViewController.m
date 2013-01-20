@@ -7,14 +7,13 @@
 //
 
 #import "DetailLessonViewController.h"
-
+#import "LessonObject.h"
 @interface DetailLessonViewController ()
 
 @end
 
 @implementation DetailLessonViewController
-@synthesize texteAAfficher = _texteAAfficher;
-@synthesize address, price, longitude, latitude;
+@synthesize lesson = _lesson;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,6 +28,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.title = _lesson.title;
+    
     self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     
     _label = [[UILabel alloc] initWithFrame:CGRectMake(20, 10, self.view.bounds.size.width, 31)];
@@ -36,14 +38,14 @@
     [_label setFont:font];
     _label.textColor = [UIColor whiteColor];
     //_textView.textAlignment = UITextAlignmentCenter;
-    _label.text = [NSString stringWithFormat:@"Prix: %d€", price];
+    _label.text = [NSString stringWithFormat:@"Prix: %d€", _lesson.price];
     _label.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.view addSubview:_label];
     
     _textView = [[UITextView alloc] initWithFrame:CGRectMake(10, 40, self.view.bounds.size.width-20, 140)];
     [_textView setFont:font];
     _textView.textColor = [UIColor whiteColor];
-    _textView.text = [NSString stringWithFormat:@"Lieu: %@ \r\n\r\n%@", address, _texteAAfficher];
+    _textView.text = [NSString stringWithFormat:@"Lieu: %@ \r\n\r\n%@", _lesson.adr, _lesson.description];
     //_textView.text = [NSString stringWithFormat:@"Lieu: %@", address];
     _textView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
     [self.view addSubview:_textView];
@@ -63,8 +65,8 @@
     [self.view addSubview:mapView];
     
     CLLocationCoordinate2D coordinate;    
-    coordinate.latitude = latitude;
-    coordinate.longitude = longitude;
+    coordinate.latitude = _lesson.latitude;
+    coordinate.longitude = _lesson.longitude;
     
     MKPointAnnotation *annotationPoint = [[MKPointAnnotation alloc] init];
     annotationPoint.coordinate = coordinate;

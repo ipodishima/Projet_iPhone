@@ -36,14 +36,25 @@
     [super viewDidLoad];
     
     NSURL *url = [NSURL URLWithString:@"http://www.youtube.com/watch?v=6SAS4HpL2eQ&feature=player_embedded"];
-    LBYouTubePlayerViewController *c = [[LBYouTubePlayerViewController alloc] initWithYouTubeURL:url];
-    c.quality = LBYouTubePlayerQualityLarge;
-    c.view.frame = CGRectMake(60.0f, 60.0f, 200.0f, 200.0f);
-    c.delegate = self;
-    [self.view addSubview:c.view];
+    _currentPlayer = [[LBYouTubePlayerViewController alloc] initWithYouTubeURL:url];
+    _currentPlayer.quality = LBYouTubePlayerQualityLarge;
+    _currentPlayer.view.frame = CGRectMake(60.0f, 60.0f, 200.0f, 200.0f);
+    _currentPlayer.delegate = self;
+    [self.view addSubview:_currentPlayer.view];
 
 }
 
+- (void) viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [_currentPlayer.view.controller stop];
+}
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [_currentPlayer.view.controller play];
+}
 
 #pragma mark - LBYouTubePlayerViewControllerDelegate
 

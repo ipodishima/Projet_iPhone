@@ -15,6 +15,7 @@
 @interface YouTubeViewController : UIViewController <YouTubeManagerDelegate, LBYouTubePlayerControllerDelegate>
 {
     YouTubeVideo *_currentVideoDisplayed;
+    LBYouTubePlayerViewController *_currentPlayer;
     
 }
 @property (weak, nonatomic) UIActivityIndicatorView *activityIndicator;

@@ -35,6 +35,7 @@
     UIFont *font = [UIFont fontWithName:@"CzaristiteBold" size:22];
     [_textView setFont:font];
     _textView.text = @"DECOUVRIR, DEGUSTER et ACHETER \r\ndu vin sur internet et par abonnement \r\n\r\n\r\n author: Eva Rousseau";
+    _textView.editable = NO;
     _textView.textColor = abcColor;
     _textView.textAlignment = UITextAlignmentCenter;
     

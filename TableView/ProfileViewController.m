@@ -44,6 +44,7 @@
     _textField2 = [[UITextField alloc] initWithFrame:CGRectMake(10, 90, self.view.bounds.size.width-20, 31)];
     [_textField2 setPlaceholder:@"Password"];
     [_textField2 setTextColor:_color];
+    _textField2.secureTextEntry = YES;
     [_textField2 setTextAlignment:UITextAlignmentLeft];
     _textField2.borderStyle = UITextBorderStyleRoundedRect;
     [self.view addSubview:_textField2];

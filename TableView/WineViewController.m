@@ -72,6 +72,7 @@
     _textView.textColor = abcColor;
     UIFont *fontText = [UIFont fontWithName:@"Czaristite" size:22];
     [_textView setFont:fontText];
+    _textView.editable = NO;
     [self.view addSubview:_textView];
 
     _imageHolder = [[UIImageView alloc] initWithFrame:CGRectMake(-100, 0, 280, 280)];

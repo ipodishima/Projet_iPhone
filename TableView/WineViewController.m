@@ -91,6 +91,13 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void) displayItemAtIndex:(NSInteger)index
+{
+    WineObject *w = [_arrayOfContacts objectAtIndex:index];
+    _textView.text = [NSString stringWithFormat:@"Title: %@\r\n AOC: %@\r\n Description: %@", w.name, w.aoc, w.description];
+    _imageHolder.image = [UIImage imageNamed:w.image];
+}
+
 #pragma mark - iCarousel methods
 
 - (NSUInteger)numberOfItemsInCarousel:(iCarousel *)carousel
@@ -119,9 +126,7 @@
 
 - (void)carouselCurrentItemIndexDidChange:(iCarousel *)carousel;
 {
-    WineObject *w = [_arrayOfContacts objectAtIndex:carousel.currentItemIndex];
-    _textView.text = [NSString stringWithFormat:@"Title: %@\r\n AOC: %@\r\n Description: %@", w.name, w.aoc, w.description];
-    _imageHolder.image = [UIImage imageNamed:w.image];
+    [self displayItemAtIndex:carousel.currentItemIndex];
 }
 
 
@@ -175,6 +180,9 @@
     
     // When we finished, reload the table view
     [_carousel reloadData];
+    
+    // Display the first item
+    [self displayItemAtIndex:0];
 }
 
 @end
